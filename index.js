@@ -15,10 +15,9 @@ window.onload = function() {
     // append HTML element to container
     // create unique identifier using i variable
     main.appendChild(squareDiv)
-
+    // add an event listener to the squareDiv with an anonymous function
     squareDiv.addEventListener('click', function(event){
-    
-      console.log(event.target.id)
+      // using the id of the event target, set the backgroundColor of the selected div to blue
       document.querySelector('#' + event.target.id).style.backgroundColor = 'blue'
     })
   }
